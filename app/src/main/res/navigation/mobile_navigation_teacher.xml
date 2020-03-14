@@ -10,7 +10,11 @@
         android:name="com.learningmanagement.ui.teacher_my_space.TeacherMySpaceFragment"
         android:label="@string/menu_teacher_my_space"
         tools:layout="@layout/fragment_teacher_my_space" />
-
+    <fragment
+        android:id="@+id/myProfileTeacherFragment"
+        android:name="com.learningmanagement.ui.teacher_my_profile.MyProfileTeacherFragment"
+        android:label="@string/menu_my_profile_parent"
+        tools:layout="@layout/fragment_my_profile_teacher" />
     <fragment
         android:id="@+id/nav_teacher_contact_us"
         android:name="com.learningmanagement.ui.teacher_contact_us.TeacherContactUsFragment"
@@ -32,4 +36,5 @@
         android:name="com.learningmanagement.ui.teacher_faq.TeacherFAQFragment"
         android:label="@string/menu_teacher_faq"
         tools:layout="@layout/fragment_teacher_f_a_q" />
+
 </navigation>

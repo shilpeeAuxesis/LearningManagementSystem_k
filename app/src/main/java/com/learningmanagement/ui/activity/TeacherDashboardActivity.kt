@@ -28,7 +28,7 @@ class TeacherDashboardActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.teacherMySpaceFragment, R.id.nav_teacher_contact_us,
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.teacherMySpaceFragment, R.id.nav_teacher_contact_us,R.id.myProfileTeacherFragment,
             R.id.nav_teacher_blog,R.id.nav_teacher_about_us,R.id.nav_teacher_faq,R.id.nav_teacher_logout), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)

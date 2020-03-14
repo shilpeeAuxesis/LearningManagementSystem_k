@@ -8,6 +8,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_my_space">My Space</string>
+    <string name="menu_my_profile_parent">My profile</string>
     <string name="menu_contact_us">Contact us</string>
     <string name="menu_blog">Blog</string>
     <string name="menu_parent_about_us">About us</string>

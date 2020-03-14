@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_parent_my_space,
+                R.id.myPofileParentFragment,
                 R.id.nav_contact_us,
                 R.id.nav_blog,
                 R.id.nav_about_us,
