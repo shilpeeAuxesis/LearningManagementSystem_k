@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/teacherMySpaceFragment">
+
+    <fragment
+        android:id="@+id/teacherMySpaceFragment"
+        android:name="com.learningmanagement.ui.teacher_my_space.TeacherMySpaceFragment"
+        android:label="@string/menu_teacher_my_space"
+        tools:layout="@layout/fragment_teacher_my_space" />
+
+    <fragment
+        android:id="@+id/nav_teacher_contact_us"
+        android:name="com.learningmanagement.ui.teacher_contact_us.TeacherContactUsFragment"
+        android:label="@string/menu_teacher_contact_us"
+        tools:layout="@layout/fragment_teacher_contact_us" />
+    <fragment
+        android:id="@+id/nav_teacher_blog"
+        android:name="com.learningmanagement.ui.teacher_blog.TeacherBlogFragment"
+        android:label="@string/menu_teacher_blog"
+        tools:layout="@layout/fragment_teacher_blog" />
+    <fragment
+        android:id="@+id/nav_teacher_about_us"
+        android:name="com.learningmanagement.ui.teacher_about_us.TeacherAboutUsFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/fragment_teacher_about_us" />
+
+    <fragment
+        android:id="@+id/nav_teacher_faq"
+        android:name="com.learningmanagement.ui.teacher_faq.TeacherFAQFragment"
+        android:label="@string/menu_teacher_faq"
+        tools:layout="@layout/fragment_teacher_f_a_q" />
+</navigation>

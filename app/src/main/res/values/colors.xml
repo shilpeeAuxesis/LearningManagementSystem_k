@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color> <!--For Tool bar-->
+    <color name="colorPrimaryDark">#000000</color>  <!--For Status bar-->
+    <color name="colorAccent">#337ab7</color> <!--For icon color-->
+    <color name="color_background">#f0f0f0</color>
+    <color name="color_blue">#337ab7</color>
+    <color name="colorGray_1">#4F4F4F</color>
+    <color name="colorGray_2">#686b78</color>
+    <color name="colorGray_hint">#AE686B78</color>
+    <color name="colorGray_3">#E1E1E1</color>
+    <color name="colorGray_4">#dbdbdb</color>
+    <color name="colorGray_5">#E9ECF1</color>
+
+    <color name="colorGray_bg">#E9ECF1</color>
+</resources>

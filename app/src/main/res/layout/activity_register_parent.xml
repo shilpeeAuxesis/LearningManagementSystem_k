@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".parent_account.activity.RegisterParentActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/inHeader"
+                    layout="@layout/header" />
+
+                <LinearLayout
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/inHeader"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/custom_bg"
+                        android:fontFamily="@font/roboto"
+                        android:hint="@string/enter_email_address_hint"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorGray_1"
+                        android:textColorHint="@color/colorGray_hint"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <EditText
+                        android:id="@+id/edtStudentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/custom_bg"
+                        android:fontFamily="@font/roboto"
+                        android:hint="@string/enter_student_name"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorGray_1"
+                        android:textColorHint="@color/colorGray_hint"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <EditText
+                        android:id="@+id/edtParentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/custom_bg"
+                        android:fontFamily="@font/roboto"
+                        android:hint="@string/enter_parent_name"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorGray_1"
+                        android:textColorHint="@color/colorGray_hint"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <EditText
+                        android:id="@+id/edtSkypeId"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/custom_bg"
+                        android:fontFamily="@font/roboto"
+                        android:hint="@string/enter_skype_id_hint"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorGray_1"
+                        android:textColorHint="@color/colorGray_hint"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tvDOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/custom_bg"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="left|center"
+                        android:hint="Select dob"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorGray_1"
+                        android:textColorHint="@color/colorGray_hint"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tvfacilities"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Facilities"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioGroup">
+
+                        <RadioButton
+                            android:id="@+id/radioSchool"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Schools"
+                            android:checked="false"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <RadioButton
+                            android:id="@+id/radioCollege"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Colleges"
+                            android:checked="false"
+                            android:textSize="@dimen/_12sdp" />
+                        <RadioButton
+                            android:id="@+id/radioHome"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Video at home"
+                            android:checked="false"
+                            android:textSize="@dimen/_12sdp" />
+                    </RadioGroup>
+
+                    <CheckBox
+                        android:id="@+id/checkTermAndCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/terms_and_condition"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_50sdp"
+                        android:background="@drawable/button_black"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/register"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
