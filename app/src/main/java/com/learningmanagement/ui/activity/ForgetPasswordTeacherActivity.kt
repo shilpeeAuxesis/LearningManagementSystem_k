@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.learningmanagement.R
 import com.learningmanagement.databinding.ActivityForgetPasswordTeacherBinding
-import com.learningmanagement.ui.constant.Utils
+import com.learningmanagement.constants.Utils
 
 class ForgetPasswordTeacherActivity : AppCompatActivity() {
     val TAG = "ForgetPasswordTeacher"

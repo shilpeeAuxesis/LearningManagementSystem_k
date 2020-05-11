@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:paddingTop="@dimen/_8sdp"
-    android:paddingBottom="@dimen/_8sdp"
+    android:padding="@dimen/_5sdp"
     android:layout_height="wrap_content">
 
     <TextView
@@ -10,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/_12sdp"
-        android:fontFamily="@font/roboto_bold"
+        android:fontFamily="@font/roboto"
         android:textColor="@color/colorGray_1"
         android:text=""/>
 

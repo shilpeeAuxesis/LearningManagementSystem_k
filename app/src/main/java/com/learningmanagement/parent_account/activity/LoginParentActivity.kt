@@ -8,21 +8,19 @@ import android.widget.Toast
 import com.learningmanagement.R
 import com.learningmanagement.databinding.ActivityLoginParentBinding
 import com.learningmanagement.parent_account.MainActivity
-import com.learningmanagement.ui.constant.Utils
+import com.learningmanagement.constants.Utils
 
 class LoginParentActivity : AppCompatActivity() {
     val TAG = "LoginParentActivity"
-    lateinit var binding: ActivityLoginParentBinding
+    private lateinit var binding: ActivityLoginParentBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginParentBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        initUI()
+        getInitUI()
     }
-
-    fun initUI(): Unit {
+    fun getInitUI(): Unit {
         binding.inHeader.tvHeaderTitle.setText(resources.getString(R.string.parent_login))
         binding.inHeader.tvBackArrow.setOnClickListener(View.OnClickListener { v ->
             onBackPressed()

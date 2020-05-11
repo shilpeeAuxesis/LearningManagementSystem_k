@@ -39,9 +39,9 @@ class TeacherDashboardActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.teacher_dashboard, menu)
         return true
     }
-
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 }

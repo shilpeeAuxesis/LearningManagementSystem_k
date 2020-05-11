@@ -1,5 +1,4 @@
 package com.learningmanagement.ui.activity
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,10 +6,9 @@ import android.os.Handler
 import android.widget.Toast
 import com.learningmanagement.R
 import com.learningmanagement.databinding.ActivitySplashBinding
-import com.learningmanagement.ui.constant.Utils
+import com.learningmanagement.constants.Utils
 
 class SplashActivity : AppCompatActivity() {
-    val TAG = "SplashActivity"
     private val SPLASH_TIME_OUT: Long = 3000
     lateinit var binding: ActivitySplashBinding
 
@@ -18,12 +16,13 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        initUI()
+        getInitUI()
     }
-    fun initUI(): Unit {
+    private fun getInitUI(): Unit {
         if (Utils.isInternetConnected(applicationContext)) {
             Handler().postDelayed({
                 startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
+                overridePendingTransition(R.anim.enter, R.anim.exit)
                 finish()
             }, SPLASH_TIME_OUT)
         }else{

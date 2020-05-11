@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.Toast
 import com.learningmanagement.R
 import com.learningmanagement.databinding.ActivityTeacherLoginBinding
-import com.learningmanagement.ui.constant.Utils
+import com.learningmanagement.constants.Utils
 
 class TeacherLoginActivity : AppCompatActivity() {
     val TAG = "TeacherLoginAcitivity"

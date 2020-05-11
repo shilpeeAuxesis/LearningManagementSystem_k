@@ -28,5 +28,4 @@
         android:text=""
         android:textColor="@color/colorPrimaryDark"
         android:textSize="@dimen/_12sdp" />
-
 </LinearLayout>
